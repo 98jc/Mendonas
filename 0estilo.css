@@ -1,0 +1,453 @@
+/* Colores logo:
+Rosa: #f17b89
+Celeste: #adf6ed
+Marrón: #febf80*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+body{
+    /* background-color: #; */
+}
+.nav{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.nav .container-nav{
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+}
+.nav .container-nav figure{
+    text-align: center;
+}
+.nav .container-nav figure a img{
+    width: 10em;
+}
+.nav .container-nav .lista{
+    padding-top: 0.5em;
+    text-align: center;
+    font-size: 1.15em;
+}
+.nav .container-nav .lista ul{
+    display: grid;
+    grid-template-columns: repeat(4, 6em);
+    text-align: center;
+}
+.nav .container-nav ul li{
+    display: inline;
+}
+.nav .container-nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #febf80;
+    /* -webkit-transition: 1s linear; */
+    transition: 0.7s linear;
+}
+.nav .container-nav ul li a:hover{
+    /* transform: translateY(-3px) scale(1.1);
+    font-weight: bold;
+    border-bottom: 2px solid; */
+    /* -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47); */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    border-radius: 2em;
+    background-color: #febf80;
+    color: white;
+}
+.nav .container-nav .redes-nav a{
+    text-decoration: none;
+    padding-right: 1em;
+    padding-top: 0.6em;
+    color: #f17b89;
+    transition: 0.5s;
+}
+.nav .container-nav .redes-nav a:hover{
+    transform: scale(1.2);
+    color: #febf80;
+}
+.foto img{
+    width: 100%;
+    object-fit: cover;
+    height: 25em;
+    opacity: 90%;
+}
+.presentacion .frase{
+    text-align: center;
+}
+.presentacion .frase h2{
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+.presentacion .frase p{
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.presentacion .frase img{
+    margin-top: 1em;
+    width: 40em;
+    border-radius: 0.5em;
+}
+.presentacion .carrusel{
+    text-align: center;
+}
+.presentacion .carrusel h2{
+    padding-top: 4em;
+}
+.presentacion .carrusel .nuestras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-left: 15em;
+    margin-right: 15em;
+    padding: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 0.5em;
+    background-color: #faf0dc;
+}
+.presentacion .carrusel .nuestras img{
+    object-fit: cover;
+    border-radius: 0.5em;
+    width: 15em;
+    height: 15em;
+    transition: 1s;
+}
+.presentacion .carrusel .nuestras img:hover{
+    transform: scale(1.03);
+}
+.presentacion .carrusel a{
+    text-decoration: none;
+    margin-top: 1.5em;
+    padding: 0.1em;
+    border: 1px solid #febf80;
+    border-radius: 0.5em;
+    background-color: #febf80;
+    color: white;
+    font-size: 1.2em;
+}
+.presentacion .carrusel a:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.presentacion .elegirnos{
+    text-align: center;
+}
+.presentacion .elegirnos h2{
+    padding-top: 2em;
+    padding-bottom: 0.8em;
+    font-size: 1.5em;
+}
+.presentacion .elegirnos .razones{
+    display: flex;
+    margin-left: 12em;
+    margin-right: 12em;
+}
+.presentacion .elegirnos .razones img{
+    width: 3em;
+    height: 3em;
+    background-color: white;
+}
+.presentacion .map{
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 2em;
+}
+.presentacion .map h2{
+    padding-bottom: 0.8em;
+}
+.presentacion .map img{
+    width: 10em;
+    margin: 6em;
+    transition: 1s;
+}
+.presentacion .map img:hover{
+    transform: scale(1.05);
+}
+.productos{
+    text-align: center;
+    margin-bottom: 4em;
+}
+.productos h2{
+    padding-top: 2em;
+    padding-bottom: 0.8em;
+    font-size: 1.5em;
+}
+.productos p{
+    padding-top: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.productos h3{
+    padding-top: 2em;
+    padding-bottom: 0.8em;
+    font-size: 1.3em;
+}
+.productos .prod .tipo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.productos .prod img{
+    object-fit: cover;
+    border-radius: 0.5em;
+    width: 15em;
+    height: 15em;
+    margin-left: 3em;
+    margin-right: 3em;
+    transition: 1s;
+}
+.donnut{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.donnut p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    transition: 1s;
+}
+.donnut:hover p{
+    color: white;
+}
+.donnut:hover img{
+    filter: brightness(50%);
+    transform: scale(1.03);
+}
+.celi .info h1{
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+.celi .info h2{
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 1.3em;
+    color: #f17b89;
+}
+.celi .info p{
+    padding-top: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.celi .masinfo{
+    text-align: center;
+}
+.celi .masinfo h2{
+    padding-top: 3em;
+    font-size: 1.2em;
+}
+.celi .masinfo img{
+    width: 8%;
+    height: 8%;
+    transition: 1s;
+}
+.celi .masinfo img:hover{
+    transform: scale(1.05);
+}
+.formu h2{
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+.formu p{
+    text-align: center;
+    font-size: 1em;
+    padding-top: 1em;
+}
+.formu .evento form{
+    margin: auto;
+    width: 70em;
+    height: auto;
+    margin-top: 3em;
+    padding: 2em;
+    border: 1px solid;
+    border-color: #f17b89;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+    display: flex;
+    flex-wrap: wrap;
+}
+.formu .evento form div{
+    width: 50%;
+    padding-top: 1.5em;
+}
+.formu .evento form .comentarios{
+    width: 100%;
+}
+.formu .evento form input, select{
+    border: 1px solid rgb(94, 203, 247);
+    border-radius: 0.5em;
+    width: 90%;
+    height: 2em;
+    padding-left: 1em;
+    margin-top: 0.7em;
+}
+.formu .evento form textarea{
+    border: 1px solid rgb(94, 203, 247);
+    border-radius: 0.5em;
+    width: 100%;
+}
+.formu .evento form .boton-enviar{
+    text-decoration: none;
+    border: 0;
+    padding: 0.5em;
+    width: 5em;
+    height: 100%;
+}
+.formu .evento form .boton-enviar:hover{
+    animation: traslado 5s linear;
+}
+    @keyframes traslado {
+    from {
+      margin-left: 0%;
+    }
+    to {
+      margin-left: 20%;
+    }
+    }
+hr{
+    margin-top: 4em;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #7a7a7a;
+    opacity: 30%;
+}
+.formu .opinion form{
+    margin: auto;
+    width: 35em;
+    height: auto;
+    margin-top: 3em;
+    margin-bottom: 6em;
+    padding: 2em;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 2em;
+    border-style: dashed;
+    border-color: #f17b89;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+}
+.formu .opinion form input{
+    border-radius: .5em;
+    height: 1.2em;
+    border: 1px solid rgb(94, 203, 247);
+}
+.formu .opinion form textarea{
+    border-radius: .5em;
+    border: 1px solid rgb(94, 203, 247);
+}
+textarea:focus, input:focus, input[type]:focus {
+    border-color: rgb(94, 203, 247);
+    box-shadow: 0 0.5px 0.5px rgba(94, 203, 247)inset, 0 0 4px rgba(0, 238, 255, 0.6);
+    outline: 0 none;
+}
+.formu .opinion form .boton-enviar{
+    text-decoration: none;
+    border: 0;
+    padding: 0.5em;
+    width: 3em;
+    height: 100%;
+    transform: rotate(270deg);
+}
+.formu .opinion form .boton-enviar:hover{
+    animation: rotation 4s infinite linear;
+}
+    @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+    }
+.footer{
+    width: 100%;
+    background-color: #febf80;
+    /* position: absolute;
+    bottom: 0; */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) inset;
+}
+.footer .container-1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 1em;
+    padding-bottom: em;
+}
+.footer .container-1 .box{
+    padding: 1.2em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.footer .container-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.footer .container-1 .box figure img{
+    width: 5em;
+    animation-name: slidelogo;
+    animation-duration: 2s;
+}
+    /* @keyframes slidelogo {
+        from{
+            margin-right: 100%;
+        }
+        to{
+            margin-right: 0%;
+        }
+    } */
+.footer .container-1 .box h2{
+    color: white;
+    margin-bottom: 0.5em;
+    font-size: 1.15em;
+}
+.footer .container-1 .box p{
+    color: #7a7a7a;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.footer .container-1 .box ul li{
+    list-style-position: inside;
+    list-style-image: url('/favicon-16x16.png');
+}
+.footer .container-1 .box ul li a{
+    text-decoration: none;
+    font-size: 1em;
+    color: #7a7a7a;
+    transition: 0.5s;
+}
+.footer .container-1 .box ul li a:hover{
+    color: #f17b89;
+    display: inline-block;
+    transform: scale(1.1);
+}
+.footer .container-1 .red-social a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color:#00000051;
+    width: 2em;
+    padding-top: 1em;
+    transition: 0.5s;
+}
+.footer .container-1 .red-social a:hover{
+    color: #f17b89;
+    transform: scale(1.2);
+}
+.footer .container-2{
+    background-color: #E6CFB2;
+    font-size: 1.1em;
+    text-align: center;
+    color: white;
+}

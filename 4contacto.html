@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/Dona.png" type="image/x-icon">
+    <link rel="stylesheet" href="0estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/cc9a86832b.js" crossorigin="anonymous"></script>
+
+    <title>Mendonas Food Truck</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container-nav">
+            <figure>
+                <a href="1index.html">
+                    <img src="/Texto.png" alt="Mendonas" class="animate__animated animate__swing">
+                </a>
+            </figure>
+            <div class="lista">
+                <ul>
+                    <li><a href="1index.html">Inicio</a> </li>
+                    <li><a href="2productos.html">Productos</a></li>
+                    <li><a href="3celiaquia.html">Celiaquía</a></li>
+                    <li><a href="4contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="redes-nav">
+                <a href="https://web.whatsapp.com/" class="fa fa-whatsapp fa-xl" target="_blank"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook fa-xl" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram fa-xl" target="_blank"></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="formu">
+        <div class="foto">
+            <img src="https://www.tufieston.com/dynamic/gallery/82/donas-eventos-original-bodas0011.jpg" alt="donas">
+        </div>
+        <div class="evento">
+            <h2>¿Estás organizando un evento?</h2>
+            <p>Si te gustaría contar con nosostros en tu próximo evento, contanos sobre él y nos pondremos en contacto cuanto antes para coordinar el mejor servicio</p>
+            <form action="" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label> <br>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre y Apellido">
+                </div>
+                <div>
+                    <label for="mail">Email:</label><br>
+                    <input type="email" name="mail" id="mail" required placeholder="Ingresa tu email">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label> <br>
+                    <input type="tel" name="numero" id="numero" required placeholder="Ingresa tu número de contacto">
+                </div>
+                <div>
+                    <label for="evento">Evento:</label> <br>
+                    <select name="evento" id="evento">
+                        <option selected></option>
+                        <option value="casamiento">Casamiento</option>
+                        <option value="cumpleaños">Cumpleaños</option>
+                        <option value="evento-corp">Evento Corporativo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="fecha">Fecha:</label> <br>
+                    <input type="date" name="fecha" id="fecha" required placeholder="Ingresa la fecha del evento">
+                </div>
+                <div>
+                    <label for="hora">Horario:</label> <br>
+                    <input type="number" name="hora" id="hora" required placeholder="Ingresa la hora en que se realizará el evento">
+                </div>
+                <div>
+                    <label for="invitados">Cantidad de invitados:</label> <br>
+                    <select name="invitados" id="invitados">
+                        <option selected></option>
+                        <option>15-30</option>
+                        <option>30-50</option>
+                        <option>50-80</option>
+                        <option>Más de 80</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ubicacion">Ubicación:</label> <br>
+                    <input type="text" name="ubicacion" id="ubicacion" required placeholder="Ingresa la ubicación del evento">
+                </div>
+                <div class="comentarios">
+                    <label for="consulta">Comentarios:</label> <br>
+                    <textarea name="consulta" id="consulta" rows="10"></textarea>
+                </div>
+                <!-- <input type="submit" value="Enviar" class="boton-enviar"> -->
+                <input title="Enviar" alt="Enviar" src="/foodtrucklogo.png" type="image" class="boton-enviar"/>
+            </form>
+        </div>
+        <hr>
+        <div class="opinion">
+            <h2>Nos interesa saber tu opinión!</h2>
+            <p>Dejanos un comentario acerca de qué te parecieron nuestros productos</p>
+                <form action="" method="post">
+                    <label for="nombre">Nombre:</label> <br>
+                    <input type="text" name="nombre" id="nombre" size="50" required>
+                    <br><br>
+                    <label for="mail">Email:</label><br>
+                    <input type="email" name="mail" id="mail" size="50" required>
+                    <br><br>
+                    <label for="asunto">Asunto:</label> <br>
+                    <input type="text" name="asunto" id="asunto" size="50" required>
+                    <br><br>
+                    <label for="mensaje">Mensaje:</label> <br>
+                    <textarea name="mensaje" id="mensaje" cols="70" rows="10"></textarea>
+                    <br><br>
+                    <!-- <input type="submit" value="Enviar" class="boton-enviar"> -->
+                    <input title="Enviar" alt="Enviar" src="/Dona.png" type="image" class="boton-enviar"/>
+                </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/foodtrucklogo.png" alt="logomendonas">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos Mendonas, un emprendimiento dedicado a la elaboración de donas aptas para celíacos, con el fin de que todos puedan disfrutar de nuestros productos</p>
+            </div>
+            <div class="box">
+                <h2>Secciones</h2>
+                <ul>
+                    <li><a href="1index.html">Inicio</a> </li>
+                    <li><a href="2productos.html">Productos</a></li>
+                    <li><a href="3celiaquia.html">Celiaquía</a></li>
+                    <li><a href="4contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Nuestras Redes</h2>
+                <div class="red-social">
+                    <a href="https://web.whatsapp.com/" class="fa fa-whatsapp fa-xl" target="_blank"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook fa-xl" target="_blank"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram fa-xl" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-2">
+            <small>
+                &copy; 2022 <b>Mendonas Food Truck</b> - Todos los derechos reservados.
+            </small>
+        </div>
+    </footer>
+</body>
+</html>
