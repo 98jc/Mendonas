@@ -419,7 +419,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 .footer .container-1 .box ul li{
     list-style-position: inside;
-    list-style-image: url('/favicon-16x16.png');
+    list-style-image: url('/Imágenes/favicon-16x16.png');
 }
 .footer .container-1 .box ul li a{
     text-decoration: none;
