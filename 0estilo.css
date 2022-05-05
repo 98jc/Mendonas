@@ -7,9 +7,6 @@ Marrón: #febf80*/
     margin: 0;
     font-family: 'Comfortaa', cursive;
 }
-body{
-    /* background-color: #; */
-}
 .nav{
     width: 100%;
     background-color: white;
@@ -345,7 +342,7 @@ hr{
 }
 textarea:focus, input:focus, input[type]:focus {
     border-color: rgb(94, 203, 247);
-    box-shadow: 0 0.5px 0.5px rgba(94, 203, 247)inset, 0 0 4px rgba(0, 238, 255, 0.6);
+    box-shadow: 0 0.5px 0.5px rgba(94, 203, 247) inset, 0 0 4px rgba(0, 238, 255, 0.6);
     outline: 0 none;
 }
 .formu .opinion form .boton-enviar{
