@@ -93,9 +93,21 @@ Marrón: #febf80*/
 .presentacion .carrusel h2{
     padding-top: 4em;
 }
-.presentacion .carrusel .nuestras{
+/* .presentacion .carrusel .nuestras{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-left: 15em;
+    margin-right: 15em;
+    padding: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 0.5em;
+    background-color: #faf0dc;
+} */
+.presentacion .carrusel .nuestras{
+    display: grid;
     justify-content: space-around;
     align-content: center;
     margin-left: 15em;
@@ -117,17 +129,19 @@ Marrón: #febf80*/
     transform: scale(1.03);
 }
 .presentacion .carrusel a{
+    display: block;
     text-decoration: none;
     margin-top: 1.5em;
     padding: 0.1em;
-    border: 1px solid #febf80;
+    /* border: 1px solid #febf80;
     border-radius: 0.5em;
-    background-color: #febf80;
-    color: white;
+    background-color: #febf80; */
+    color: #febf80;
+    font-weight: bold;
     font-size: 1.2em;
 }
 .presentacion .carrusel a:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: 0.7s;
 }
 .presentacion .elegirnos{
