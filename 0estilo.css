@@ -120,6 +120,8 @@ Marrón: #febf80*/
 }
 .presentacion .carrusel .nuestras img{
     object-fit: cover;
+    margin-right: 0.4em;
+    margin-left: 0.4em;
     border-radius: 0.5em;
     width: 15em;
     height: 15em;
@@ -138,7 +140,7 @@ Marrón: #febf80*/
     background-color: #febf80; */
     color: #febf80;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 .presentacion .carrusel a:hover{
     transform: scale(1.03);
@@ -239,12 +241,13 @@ Marrón: #febf80*/
     padding-top: 2em;
 }
 .celi .info h2{
-    padding-top: 1em;
+    padding-top: 1.2em;
     padding-left: 1em;
     font-size: 1.3em;
     color: #f17b89;
 }
 .celi .info p{
+    text-align: justify;
     padding-top: 0.3em;
     padding-left: 1em;
     padding-right: 1em;
@@ -436,7 +439,7 @@ textarea:focus, input:focus, input[type]:focus {
     text-decoration: none;
     font-size: 1em;
     color: #7a7a7a;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 .footer .container-1 .box ul li a:hover{
     color: #f17b89;
