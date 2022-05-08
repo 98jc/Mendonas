@@ -501,6 +501,14 @@ textarea:focus, input:focus, input[type]:focus {
         display: flex;
         flex-wrap: wrap;
     }
+    #sec-footer{
+        display: none;
+        padding: 0;
+    }
+    .footer .container-1 .red-social a{
+        width: 2em;
+        padding-bottom: 1em;
+    }
 }
 @media screen and (max-width: 720px) {
     .presentacion .carrusel .nuestras img{
