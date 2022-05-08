@@ -7,6 +7,10 @@ Marrón: #febf80*/
     margin: 0;
     font-family: 'Comfortaa', cursive;
 }
+h1, h2, p{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
 .nav{
     width: 100%;
     background-color: white;
@@ -84,7 +88,7 @@ Marrón: #febf80*/
 }
 .presentacion .frase img{
     margin-top: 1em;
-    width: 50%;
+    width: 55%;
     border-radius: 0.5em;
 }
 .presentacion .carrusel{
@@ -93,19 +97,6 @@ Marrón: #febf80*/
 .presentacion .carrusel h2{
     padding-top: 4em;
 }
-/* .presentacion .carrusel .nuestras{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    margin-left: 15em;
-    margin-right: 15em;
-    padding: 4em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border-radius: 0.5em;
-    background-color: #faf0dc;
-} */
 .presentacion .carrusel .nuestras{
     display: grid;
     justify-content: space-around;
@@ -209,6 +200,7 @@ Marrón: #febf80*/
 .productos .prod img{
     object-fit: cover;
     border-radius: 0.5em;
+    padding-bottom: 0.5em;
     width: 15em;
     height: 15em;
     margin-left: 3em;
@@ -386,8 +378,6 @@ textarea:focus, input:focus, input[type]:focus {
 .footer{
     width: 100%;
     background-color: #febf80;
-    /* position: absolute;
-    bottom: 0; */
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) inset;
 }
 .footer .container-1{
@@ -412,17 +402,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 .footer .container-1 .box figure img{
     width: 5em;
-    animation-name: slidelogo;
-    animation-duration: 2s;
 }
-    /* @keyframes slidelogo {
-        from{
-            margin-right: 100%;
-        }
-        to{
-            margin-right: 0%;
-        }
-    } */
 .footer .container-1 .box h2{
     color: white;
     margin-bottom: 0.5em;
@@ -470,6 +450,7 @@ textarea:focus, input:focus, input[type]:focus {
 @media screen and (max-width: 1050px) {
     .presentacion .carrusel .nuestras{
         margin: 4em;
+        margin-top: 1em;
         padding: 2em;
     }
     .presentacion .carrusel .nuestras img{
@@ -501,6 +482,13 @@ textarea:focus, input:focus, input[type]:focus {
         display: flex;
         flex-wrap: wrap;
     }
+    .footer .container-1 .box{
+        text-align: center;
+        margin: auto;
+    }
+    .footer .container-1 .box figure img{
+        width: 4em;
+    }
     #sec-footer{
         display: none;
         padding: 0;
@@ -508,6 +496,15 @@ textarea:focus, input:focus, input[type]:focus {
     .footer .container-1 .red-social a{
         width: 2em;
         padding-bottom: 1em;
+    }
+    .footer .container-1 .box h2{
+        font-size: 1em;
+    }
+    .footer .container-1 .box p{
+        font-size: 0.9em;
+    }
+    .footer .container-2{
+        font-size: 0.8em;
     }
 }
 @media screen and (max-width: 720px) {
@@ -572,6 +569,18 @@ textarea:focus, input:focus, input[type]:focus {
     .presentacion .elegirnos .razones{
         margin: auto;
         display: block;
+    }
+    .footer .container-1 .box figure img{
+        width: 3.5em;
+    }
+    .footer .container-1 .box h2{
+        font-size: 0.9em;
+    }
+    .footer .container-1 .box p{
+        font-size: 0.8em;
+    }
+    .footer .container-2{
+        font-size: 0.7em;
     }
 }
 @media screen and (max-width: 580px){
