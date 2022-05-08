@@ -279,7 +279,7 @@ Marrón: #febf80*/
 }
 .formu .evento form{
     margin: auto;
-    width: 70em;
+    width: 70%;
     height: auto;
     margin-top: 3em;
     padding: 2em;
@@ -336,7 +336,7 @@ hr{
 }
 .formu .opinion form{
     margin: auto;
-    width: 35em;
+    width: 35%;
     height: auto;
     margin-top: 3em;
     margin-bottom: 6em;
@@ -349,11 +349,13 @@ hr{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
 }
 .formu .opinion form input{
+    width: 100%;
     border-radius: .5em;
     height: 1.2em;
     border: 1px solid rgb(94, 203, 247);
 }
 .formu .opinion form textarea{
+    width: 100%;
     border-radius: .5em;
     border: 1px solid rgb(94, 203, 247);
 }
@@ -464,4 +466,122 @@ textarea:focus, input:focus, input[type]:focus {
     font-size: 1.1em;
     text-align: center;
     color: white;
+}
+@media screen and (max-width: 1050px) {
+    .presentacion .carrusel .nuestras{
+        margin: 4em;
+        padding: 2em;
+    }
+    .presentacion .carrusel .nuestras img{
+        width: 10em;
+        height: 10em;
+    }
+    .productos .prod .tipo{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav .container-nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav .redes-nav{
+        display: none !important;
+    }
+    .presentacion .carrusel .nuestras img{
+        width: 10em;
+        height: 10em;
+    }
+    .celi .masinfo img{
+        width: 15%;
+        height: 15%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer .container-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 720px) {
+    .presentacion .carrusel .nuestras img{
+        width: 9em;
+        height: 9em;
+    }
+}
+@media screen and (max-width: 672px) {
+    .presentacion .carrusel .nuestras img{
+        width: 7em;
+        height: 7em;
+    }
+    .presentacion .carrusel a{
+        font-size: 0.8em;
+    }
+    .presentacion .elegirnos .razones{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .presentacion .elegirnos .razones img{
+        width: 2em;
+        height: 2em;
+    }
+    .presentacion .map img{
+        width: 7em;
+        margin: 6em;
+    }
+    .productos .prod img{
+        width: 10em;
+        height: 10em;
+    }
+    .productos .prod img:hover{
+        width: 15em;
+        height: 15em;
+    }
+    .formu .evento form{
+        margin: auto;
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .formu .evento form div{
+        width: 50%;
+        padding-top: 1.5em;
+    }
+    .formu .evento form .comentarios{
+        width: 100%;
+    }
+    .formu .evento form .boton-enviar{
+        width: 4em;
+    }
+    .presentacion .map iframe{
+        width: 300px;
+        height: 300px;
+    }
+    .presentacion .elegirnos .razones{
+        margin: auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px){
+    .presentacion .carrusel .nuestras img{
+        width: 5em;
+        height: 5em;
+    }
+}
+@media screen and (max-width: 480px){
+    .presentacion .carrusel .nuestras img{
+        width: 3em;
+        height: 3em;
+    }
+    .presentacion .elegirnos{
+        width: 100%;
+    }
+    .presentacion .elegirnos .razones{
+        margin: auto;
+        display: block;
+    }
 }
