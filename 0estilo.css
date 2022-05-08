@@ -336,7 +336,7 @@ hr{
 }
 .formu .opinion form{
     margin: auto;
-    width: 35%;
+    width: 40%;
     height: auto;
     margin-top: 3em;
     margin-bottom: 6em;
@@ -349,7 +349,7 @@ hr{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
 }
 .formu .opinion form input{
-    width: 100%;
+    width: 70%;
     border-radius: .5em;
     height: 1.2em;
     border: 1px solid rgb(94, 203, 247);
@@ -540,18 +540,22 @@ textarea:focus, input:focus, input[type]:focus {
         margin: auto;
         width: 70%;
         height: auto;
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
     }
     .formu .evento form div{
-        width: 50%;
-        padding-top: 1.5em;
+        width: 100%;
     }
     .formu .evento form .comentarios{
         width: 100%;
     }
     .formu .evento form .boton-enviar{
         width: 4em;
+    }
+    .formu .opinion form{
+        width: 50%;
+    }
+    .formu .opinion form .boton-enviar{
+        width: 2em;
     }
     .presentacion .map iframe{
         width: 300px;
