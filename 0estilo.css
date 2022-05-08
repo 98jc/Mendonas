@@ -84,7 +84,7 @@ Marrón: #febf80*/
 }
 .presentacion .frase img{
     margin-top: 1em;
-    width: 40em;
+    width: 50%;
     border-radius: 0.5em;
 }
 .presentacion .carrusel{
@@ -110,8 +110,8 @@ Marrón: #febf80*/
     display: grid;
     justify-content: space-around;
     align-content: center;
-    margin-left: 15em;
-    margin-right: 15em;
+    margin-left: 23em;
+    margin-right: 23em;
     padding: 4em;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -123,8 +123,8 @@ Marrón: #febf80*/
     margin-right: 0.4em;
     margin-left: 0.4em;
     border-radius: 0.5em;
-    width: 15em;
-    height: 15em;
+    width: 12em;
+    height: 12em;
     transition: 1s;
 }
 .presentacion .carrusel .nuestras img:hover{
@@ -490,10 +490,6 @@ textarea:focus, input:focus, input[type]:focus {
     .nav .redes-nav{
         display: none !important;
     }
-    .presentacion .carrusel .nuestras img{
-        width: 10em;
-        height: 10em;
-    }
     .celi .masinfo img{
         width: 15%;
         height: 15%;
@@ -566,22 +562,22 @@ textarea:focus, input:focus, input[type]:focus {
         display: block;
     }
 }
-@media screen and (max-width: 600px){
-    .presentacion .carrusel .nuestras img{
-        width: 5em;
-        height: 5em;
+@media screen and (max-width: 580px){
+    .fuera{
+        display: none;
     }
 }
 @media screen and (max-width: 480px){
-    .presentacion .carrusel .nuestras img{
-        width: 3em;
-        height: 3em;
-    }
     .presentacion .elegirnos{
         width: 100%;
     }
     .presentacion .elegirnos .razones{
         margin: auto;
         display: block;
+    }
+    .nav .container-nav .lista{
+        padding-top: 0.5em;
+        text-align: center;
+        font-size: 1.07em;
     }
 }
