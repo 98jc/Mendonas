@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     
     <script src="https://kit.fontawesome.com/cc9a86832b.js" crossorigin="anonymous"></script>
+    <script src="validar.js"></script>
 
     <title>Mendonas Food Truck</title>
 </head>
@@ -28,7 +29,7 @@
                     <li><a href="index.html">Inicio</a> </li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="celiaquia.html">Celiaquía</a></li>
-                    <li><a href="contacto.html">Contactos</a></li>
+                    <li class="active"><a href="contacto.html">Contactos</a></li>
                 </ul>
             </div>
             <div class="redes-nav">
@@ -46,7 +47,7 @@
         <div class="evento">
             <h2>¿Estás organizando un evento?</h2>
             <p>Si te gustaría contar con nosostros en tu próximo evento, contanos sobre él y nos pondremos en contacto cuanto antes para coordinar el mejor servicio</p>
-            <form action="" method="post">
+            <form name="fevento" action="" method="post">
                 <div>
                     <label for="nombre">Nombre:</label> <br>
                     <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre y Apellido">
@@ -96,14 +97,14 @@
                     <textarea name="consulta" id="consulta" rows="10"></textarea>
                 </div>
                 <!-- <input type="submit" value="Enviar" class="boton-enviar"> -->
-                <input title="Enviar" alt="Enviar" src="Imágenes/foodtrucklogo.png" type="image" class="boton-enviar"/>
+                <input title="Enviar" alt="Enviar" src="Imágenes/foodtrucklogo.png" type="image" class="boton-enviar" onclick="valida_enviaev()"/>
             </form>
         </div>
         <hr>
         <div class="opinion">
             <h2>Nos interesa saber tu opinión!</h2>
             <p>Dejanos un comentario acerca de qué te parecieron nuestros productos</p>
-                <form action="" method="post">
+                <form action="" method="post" name="fopinion">
                     <label for="nombre">Nombre:</label> <br>
                     <input type="text" name="nombre" id="nombre" size="50" required>
                     <br><br>
@@ -117,7 +118,7 @@
                     <textarea name="mensaje" id="mensaje" cols="70" rows="10"></textarea>
                     <br><br>
                     <!-- <input type="submit" value="Enviar" class="boton-enviar"> -->
-                    <input title="Enviar" alt="Enviar" src="Imágenes/Dona.png" type="image" class="boton-enviar"/>
+                    <input title="Enviar" alt="Enviar" src="Imágenes/Dona.png" type="image" class="boton-enviar" onclick="valida_enviaop()"/>
                 </form>
         </div>
     </section>
