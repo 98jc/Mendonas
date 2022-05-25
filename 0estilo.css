@@ -622,3 +622,17 @@ textarea:focus, input:focus, input[type]:focus {
         font-size: 1.07em;
     }
 }
+@media screen and (max-width: 415px) {
+    .nav .container-nav .lista ul{
+        display: block;
+    }
+    .nav .container-nav ul li{
+        display: block;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+    }
+    .nav .container-nav figure{
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+    }
+}
